@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.topbar__wrapper{
+    @apply w-full flex justify-center 
+}
+.topbar__content{
+    @apply  py-2 bg-[#1d2734] mt-6 px-6 py-[18px] rounded-[30px] w-[700px]
+}
+.topbar__content ul {
+   @apply flex justify-evenly
+}
+.topbar__content ul li{
+    
+}
+.topbar__content ul li a{
+    @apply  font-semibold py-2 px-6 rounded-full
+}
+/* .topbar__content ul li a:hover{
+    @apply  text-lg
+} */
+.socialmedia__bar a img{
+    @apply opacity-50
+}
+/* .burgerMenu span{
+    @apply 
+} */
