@@ -4,9 +4,6 @@ import logoOutline from '../assets/logo-outline.svg'
 import dotcircles from '../assets/dotcircles.svg'
 import { Terminal, github, linkedIn, mail, DevTo } from "./index"
 import TimeLine from './timeLine'
-import FloatingTags from './floatingTags'
-import SkillSet from './skillSet'
-import Contact from './contact'
 // import OwlCarousel from 'react-owl-carousel';
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -24,7 +21,7 @@ function MainContainer() {
                     <a><img src={mail} /></a>
                 </div>
                 {/* Social media bar */}
-                <div className='hero__banner h-screen flex items-center justify-around px-[5rem] py-[3rem] md:flex flex-wrap gap-4'>
+                <div className='hero__banner h-[calc(100vh-100px)] flex items-center justify-around px-[5rem] py-[3rem] md:flex flex-wrap gap-4'>
                     <div className='banner__content w-3/5'>
                         <h4 className='text-2xl font-semibold'>Hello! 👋</h4>
                         <h2 className='text-4xl mb-4 font-bold'>I'm <span className='border-b-2 border-[#2eb89c]'>Niranjan Govinthan</span></h2>
@@ -49,21 +46,10 @@ function MainContainer() {
                         <p className='text-xl font-[600]'>I am a 4 years experienced Fullstack developer focused on React, TypeScript, and Node.js. I specialize in building robust React frontends and scalable Node.js APIs that simplify complex data operations. Outside of coding, I play electric guitar, enjoy video games, and love exploring new technologies.</p>
                     </div>
                 </div>
-
+                
             </section>
-            <TimeLine />
+            <TimeLine/>
             {/* About me */}
-            {/* My Skills */}
-            <section className="relative overflow-hidden py-20">
-                <FloatingTags />
-                <div className="relative z-10">
-                   <SkillSet/>
-                </div>
-            </section>
-            {/* My Skills */}
-            {/* Contact */}
-             <Contact/>
-             {/* Contact */}
         </>
     )
 }
