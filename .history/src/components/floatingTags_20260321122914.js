@@ -1,0 +1,44 @@
+import { useCallback } from "react";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+
+function FloatingTags() {
+  const init = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
+  return (
+    <Particles
+      id="skills-bg"
+      init={init}
+      className="absolute inset-0 w-full h-full pointer-events-none"
+      options={{
+        fullScreen: { enable: false },   // stays inside parent, not fullscreen
+        particles: {
+          number: { value: 30 },
+          move: {
+            enable: true,
+            speed: 0.6,
+            direction: "top",
+            straight: false,
+          },
+          opacity: { value: { min: 0.05, max: 0.15 } },
+          size: { value: 0 },           // no dot, just text
+          shape: {
+            type: "char",
+            options: {
+              char: {
+                value: ["<div>", "</div>", "<p>", "const", "=>", "useEffect", ".map()", "async", "await", "<span>"],
+                font: "DM Sans",
+                style: "",
+                weight: "500",
+              },
+            },
+          },
+          color: { value: "#0d9488" },
+        },
+        background: { color: "transparent" },
+      }}
+    />
+  );
+}

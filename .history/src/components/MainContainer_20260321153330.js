@@ -24,7 +24,7 @@ function MainContainer() {
                     <a><img src={mail} /></a>
                 </div>
                 {/* Social media bar */}
-                <div className='hero__banner h-screen flex items-center justify-around px-[5rem] py-[3rem] md:flex flex-wrap gap-4'>
+                <div className='hero__banner h-[calc(100vh-100px)] flex items-center justify-around px-[5rem] py-[3rem] md:flex flex-wrap gap-4'>
                     <div className='banner__content w-3/5'>
                         <h4 className='text-2xl font-semibold'>Hello! 👋</h4>
                         <h2 className='text-4xl mb-4 font-bold'>I'm <span className='border-b-2 border-[#2eb89c]'>Niranjan Govinthan</span></h2>

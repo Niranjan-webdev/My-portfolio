@@ -4,12 +4,12 @@ import TimelineCard from './TimelineCard';
 const timelineData = [
   {
     date: '02.2026 – Present',
-    title: 'Associate Engineer',
-    company: 'Syneos Health',
-    companyInitials: 'SH',
+    title: 'Fullstack Software Developer',
+    company: 'FJD Information Technologies AG',
+    companyInitials: 'FJD',
     bullets: [
       'Development, continuous improvement, and structural co-design of scalable web applications with a focus on frontend architecture (React, TypeScript).',
-      'Invloved in product development that renders dashboards seamlesly with the json passed to it.',
+      'Design, implementation, and maintenance of backend services and REST APIs with strong emphasis on clear interfaces, maintainability, and security.',
       'Close collaboration with engineering, UI/UX, and DevOps in an agile Scrum environment, including code reviews and active shared responsibility for code quality and application stability.',
     ],
     side: 'left',
@@ -42,9 +42,9 @@ const timelineData = [
 
 function TimeLine() {
   return (
-    <div className="relative w-full py-12 mt-[3rem] px-[6rem]">
+    <div className="relative w-full py-12 mt-[3rem] px-[4rem]">
       {/* Central vertical line */}
-      <div className="absolute left-1/2  top-0 bottom-0 w-[2px] bg-[#2eb89c] -translate-x-1/2" />
+      <div className="absolute left-1/2 text-[#2eb89c] top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2" />
 
       <div className="flex flex-col gap-16 relative">
         {timelineData.map((item, i) => (

@@ -3,8 +3,6 @@ export {default as MainContainer} from "./MainContainer"
 export {default as Terminal} from "./terminal"
 export {default as Timeline} from "./timeLine"
 export {default as TimelineCard} from "./TimelineCard"
-export {default as FloatingTags} from "./floatingTags"
-export {default as SkillSet} from "./skillSet"
 
 export {default as github} from "../assets/github-logo-dark.png"
 export {default as linkedIn} from "../assets/linkedin-logo-dark.png"

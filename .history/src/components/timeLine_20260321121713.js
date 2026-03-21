@@ -42,7 +42,7 @@ const timelineData = [
 
 function TimeLine() {
   return (
-    <div className="relative w-full py-12 mt-[3rem] px-[6rem]">
+    <div className="relative w-full py-12 mt-[3rem] px-[4rem]">
       {/* Central vertical line */}
       <div className="absolute left-1/2  top-0 bottom-0 w-[2px] bg-[#2eb89c] -translate-x-1/2" />
 
