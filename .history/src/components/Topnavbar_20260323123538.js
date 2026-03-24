@@ -21,7 +21,7 @@ function Topnavbar() {
     return (
         <>
         {width >= 768 ? ( <div className='topbar__wrapper  '>
-                <nav className='topbar__content fixed shadow-2xl z-20'>
+                <nav className='topbar__content fixed shadow-2xl z-10'>
                     <ul className=''>
                         {navItems.map((item) => (
                             <li key={item}>

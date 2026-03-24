@@ -28,8 +28,8 @@ function FloatingTags() {
             random: true,
             straight: false,
           },
-          opacity: { value: { min: 0.15, max: 0.35 } },  // ← much higher
-          size: { value: 12 },                             // ← text needs a size
+          opacity: { value: { min: 0.03, max: 0.12 } },
+          size: { value: 0 },
           shape: {
             type: "char",
             options: {
@@ -43,11 +43,10 @@ function FloatingTags() {
                 font: "monospace",
                 style: "",
                 weight: "400",
-                fill: true,                                // ← needed to render text
               },
             },
           },
-          color: { value: "#abb1ba" },
+          color: { value: "#2eb89c" },
         },
         background: { color: "" },
       }}

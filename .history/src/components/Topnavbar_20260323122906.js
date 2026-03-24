@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import logo from '../assets/logo.svg'
-import useWindowSize from '../hooks/useWindowSize'
+import useWindowSize from '@/hooks/useWindowSize'
 
 function Topnavbar() {
 
@@ -20,8 +20,8 @@ function Topnavbar() {
     }
     return (
         <>
-        {width >= 768 ? ( <div className='topbar__wrapper  '>
-                <nav className='topbar__content fixed shadow-2xl z-20'>
+        {width >= 768 ? ( <div className='topbar__wrapper'>
+                <nav className='topbar__content'>
                     <ul className=''>
                         {navItems.map((item) => (
                             <li key={item}>

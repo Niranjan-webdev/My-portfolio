@@ -48,7 +48,7 @@ function TimeLine() {
   // Mobile: plain stacked cards, no timeline
   if (isMobile) {
     return (
-      <div className="w-full py-8 px-6 flex flex-col gap-6">
+      <div className="w-full py-10 px-6 flex flex-col gap-6">
         {timelineData.map((item, i) => (
           <TimelineCard key={i} item={item} isMobile={isMobile} />
         ))}

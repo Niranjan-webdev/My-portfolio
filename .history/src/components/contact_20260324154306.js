@@ -16,12 +16,12 @@ function Contact() {
     <section className="w-full px-8 py-12 flex flex-col gap-16 md:items-center justify-between md:flex-row md:px-20 md:py-24">
 
       {/* ── Left side ── */}
-      <div className=" flex flex-col text-center md:text-left md:w-1/2">
+      <div className=" flex flex-col text-center md:w-1/2">
         <p className="text-sm font-bold tracking-widest text-[#2dd4bf] mb-4">- CONTACT</p>
         <h2 className="text-5xl font-black text-gray-900 mb-8 leading-tight">
           Let's connect
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-10 text-center md:text-left md:max-w-md">
+        <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-md">
           Do you have a{' '}
           <span className="text-[#7c3aed] font-semibold">question</span>,{' '}
           <span className="text-[#7c3aed] font-semibold">feedback</span>
@@ -34,7 +34,7 @@ function Contact() {
         <hr className="border-gray-200 mb-10" />
 
         {/* Social icons */}
-        <div className="flex justify-center md:items-center md:justify-start gap-5">
+        <div className="flex justify-center md:ijustify-start gap-5">
           <a href="#" className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
             <img src={github} alt="GitHub" className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert transition-all duration-200" />
           </a>

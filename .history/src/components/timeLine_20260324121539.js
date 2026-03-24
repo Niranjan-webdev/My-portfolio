@@ -50,7 +50,7 @@ function TimeLine() {
     return (
       <div className="w-full py-8 px-6 flex flex-col gap-6">
         {timelineData.map((item, i) => (
-          <TimelineCard key={i} item={item} isMobile={isMobile} />
+          <TimelineCard key={i} item={item} />
         ))}
       </div>
     );
@@ -64,7 +64,7 @@ function TimeLine() {
 
       <div className="flex flex-col gap-16 relative">
         {timelineData.map((item, i) => (
-          <TimelineCard key={i} item={item} isMobile={isMobile} />
+          <TimelineCard key={i} item={item} />
         ))}
       </div>
     </div>
