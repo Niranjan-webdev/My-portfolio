@@ -8,12 +8,14 @@ import FloatingTags from './floatingTags'
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MainContainer() {
     const { width, height } = useWindowSize()
     return (
         <>
-          <FloatingTags/>
             {/* Hero Banner start */}
             <section className='w-full'>
                 {/* Social media bar */}
@@ -26,7 +28,7 @@ function MainContainer() {
 
                 {/* Social media bar */}
                 <div className='hero__banner min-h-screen flex flex-col md:flex-row items-center justify-around px-6 md:px-[5rem] py-[3rem] gap-8'>
-                    <div className='banner__content w-full flex flex-col items-center md:items-start  md:w-3/5'>
+                    <div className='banner__content w-full flex flex-col items-center  md:w-3/5'>
                         <h4 className='text-xl md:text-2xl font-semibold'>Hello! 👋</h4>
                         <h2 className='text-2xl md:text-4xl mb-4 font-bold'>I'm <span className='border-b-2 border-[#2eb89c]'>Niranjan Govinthan</span></h2>
                         <h1 className='text-4xl md:text-6xl mb-6 font-bold bg-gradient-to-r from-[#2eb89c] to-[#1d2734] text-transparent bg-clip-text'>FULLSTACK-DEVELOPER</h1>
@@ -57,7 +59,7 @@ function MainContainer() {
             {/* About me */}
             {/* My Skills */}
             <section className="relative overflow-hidden py-20">
-         
+                <FloatingTags />
                 <div className="relative z-10">
                     <SkillSet />
                 </div>

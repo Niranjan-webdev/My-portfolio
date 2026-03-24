@@ -1,6 +1,5 @@
 import React from 'react';
 import TimelineCard from './TimelineCard';
-import useWindowSize from '../hooks/useWindowSize';
 
 const timelineData = [
   {
@@ -42,21 +41,6 @@ const timelineData = [
 ];
 
 function TimeLine() {
-  const { width } = useWindowSize();
-  const isMobile = width < 768;
-
-  // Mobile: plain stacked cards, no timeline
-  if (isMobile) {
-    return (
-      <div className="w-full py-8 px-6 flex flex-col gap-6">
-        {timelineData.map((item, i) => (
-          <TimelineCard key={i} item={item} isMobile={isMobile} />
-        ))}
-      </div>
-    );
-  }
-
-  // Desktop: untouched
   return (
     <div className="relative w-full py-12 mt-[3rem] px-[6rem]">
       {/* Central vertical line */}
@@ -64,7 +48,7 @@ function TimeLine() {
 
       <div className="flex flex-col gap-16 relative">
         {timelineData.map((item, i) => (
-          <TimelineCard key={i} item={item} isMobile={isMobile} />
+          <TimelineCard key={i} item={item} />
         ))}
       </div>
     </div>

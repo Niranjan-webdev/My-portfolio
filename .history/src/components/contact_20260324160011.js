@@ -21,7 +21,7 @@ function Contact() {
         <h2 className="text-5xl font-black text-gray-900 mb-8 leading-tight">
           Let's connect
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-10 text-center md:text-left md:max-w-md">
+        <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-md">
           Do you have a{' '}
           <span className="text-[#7c3aed] font-semibold">question</span>,{' '}
           <span className="text-[#7c3aed] font-semibold">feedback</span>

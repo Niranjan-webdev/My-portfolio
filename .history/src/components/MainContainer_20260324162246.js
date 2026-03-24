@@ -4,16 +4,18 @@ import logoOutline from '../assets/logo-outline.svg'
 import dotcircles from '../assets/dotcircles.svg'
 import { Terminal, github, linkedIn, mail, DevTo } from "./index"
 import TimeLine from './timeLine'
-import FloatingTags from './floatingTags'
+
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MainContainer() {
     const { width, height } = useWindowSize()
     return (
         <>
-          <FloatingTags/>
             {/* Hero Banner start */}
             <section className='w-full'>
                 {/* Social media bar */}

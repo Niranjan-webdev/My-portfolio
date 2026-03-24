@@ -8,6 +8,9 @@ import FloatingTags from './floatingTags'
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MainContainer() {
     const { width, height } = useWindowSize()

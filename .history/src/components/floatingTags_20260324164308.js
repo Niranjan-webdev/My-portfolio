@@ -47,7 +47,7 @@ function FloatingTags() {
               },
             },
           },
-          color: { value: "#abb1ba" },
+          color: { value: "#2eb89c" },
         },
         background: { color: "" },
       }}

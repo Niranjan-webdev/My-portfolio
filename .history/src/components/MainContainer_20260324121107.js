@@ -8,12 +8,14 @@ import FloatingTags from './floatingTags'
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MainContainer() {
     const { width, height } = useWindowSize()
     return (
         <>
-          <FloatingTags/>
             {/* Hero Banner start */}
             <section className='w-full'>
                 {/* Social media bar */}
@@ -57,7 +59,7 @@ function MainContainer() {
             {/* About me */}
             {/* My Skills */}
             <section className="relative overflow-hidden py-20">
-         
+                <FloatingTags />
                 <div className="relative z-10">
                     <SkillSet />
                 </div>
