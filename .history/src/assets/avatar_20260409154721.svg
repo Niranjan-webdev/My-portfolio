@@ -1,0 +1,31 @@
+<svg width="100%" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>NG developer avatar</title>
+  <desc>Stylish NG initials avatar with teal accent and orbit ring</desc>
+
+  <circle cx="340" cy="340" r="290" fill="#2eb89c" opacity="0.07"/>
+  <circle cx="340" cy="340" r="240" fill="#2eb89c" opacity="0.07"/>
+
+  <circle cx="340" cy="340" r="270" fill="none" stroke="#2eb89c" stroke-width="2" stroke-dasharray="12 6" opacity="0.4"/>
+
+  <circle cx="340" cy="70" r="8" fill="#2eb89c"/>
+  <circle cx="610" cy="340" r="6" fill="#2eb89c" opacity="0.3"/>
+  <circle cx="340" cy="610" r="6" fill="#2eb89c" opacity="0.3"/>
+  <circle cx="70" cy="340" r="8" fill="#2eb89c"/>
+  <circle cx="531" cy="149" r="5" fill="#2eb89c"/>
+  <circle cx="149" cy="531" r="4" fill="#2eb89c" opacity="0.3"/>
+  <circle cx="531" cy="531" r="4" fill="#2eb89c" opacity="0.3"/>
+  <circle cx="149" cy="149" r="5" fill="#2eb89c"/>
+
+  <circle cx="340" cy="340" r="220" fill="#1d2734"/>
+  <circle cx="340" cy="340" r="220" fill="none" stroke="#2eb89c" stroke-width="6"/>
+  <circle cx="340" cy="340" r="190" fill="none" stroke="#2eb89c" stroke-width="1" opacity="0.15"/>
+
+  <path d="M180 220 L180 190 L210 190" fill="none" stroke="#2eb89c" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M500 220 L500 190 L470 190" fill="none" stroke="#2eb89c" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M180 460 L180 490 L210 490" fill="none" stroke="#2eb89c" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M500 460 L500 490 L470 490" fill="none" stroke="#2eb89c" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <text x="340" y="400" font-family="monospace" font-size="160" font-weight="700" fill="#2eb89c" text-anchor="middle" letter-spacing="-4">NG</text>
+
+  <line x1="230" y1="420" x2="450" y2="420" stroke="#2eb89c" stroke-width="3" opacity="0.4"/>
+</svg>

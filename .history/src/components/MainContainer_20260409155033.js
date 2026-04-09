@@ -55,7 +55,7 @@ function MainContainer() {
             <section id="about" className='about__me flex'>
                 <div className='about__container w-full py-16 md:py-[4rem] px-6 md:px-16 flex flex-col md:flex-row items-center justify-around gap-10'>
                     <div className='profile flex justify-center'>
-                        <img src={ngAvatar} alt="NG" className='w-56 h-56 md:w-[36rem] md:h-[36rem]' />
+                        <img src={ngAvatar} alt="NG" className='w-56 h-56 md:w-84 md:h-84' />
                     </div>
                     <div className='about__content w-full md:text-left text-center md:w-1/2'>
                         <h4 className='text-lg md:text-xl font-bold text-[#2eb89c] mb-6'>— ABOUT ME</h4>
