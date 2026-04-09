@@ -4,38 +4,37 @@ import useWindowSize from '../hooks/useWindowSize';
 
 const timelineData = [
   {
-    date: '02.2026 – Present',
+    date: '03.2023 – Present',
     title: 'Associate Engineer',
     company: 'Syneos Health',
     companyInitials: 'SH',
     bullets: [
-      'Development, continuous improvement, and structural co-design of scalable web applications with a focus on frontend architecture (React, TypeScript).',
-      'Invloved in product development that renders dashboards seamlesly with the json passed to it.',
-      'Close collaboration with engineering, UI/UX, and DevOps in an agile Scrum environment, including code reviews and active shared responsibility for code quality and application stability.',
+      'Revamped and optimized the codebase of a live production application, improving performance, readability, and long-term maintainability while minimizing regression issues.',
+      'Refactored and streamlined existing dashboard components and business logic, improving overall application performance, reducing complexity, and making the codebase easier to maintain and extend.'
     ],
     side: 'left',
   },
   {
-    date: '03.2024 – 01.2026',
-    title: 'Fullstack Software Developer',
-    company: 'DealerCenter Digital GmbH',
-    companyInitials: 'DC',
-    bullets: [
-      'Development and continuous improvement of frontend-oriented applications and UI workflows using React, TypeScript, and Node.js.',
-      'Design and operation of scalable backend systems with a focus on automated ETL pipelines in the vehicle data domain, including data ingestion, transformation, and normalization.',
-      'Automation using Puppeteer and Jenkins, containerization with Docker, and structured data processing with XML and JSON.',
-    ],
+    date: '08.2022 – 02.2023',
+    title: 'Associate Developer Trainee',
+    company: 'Syneos Health',
+    companyInitials: 'SH',
+   bullets: [
+  'Built a JSON-driven dashboard builder enabling non-technical users to create real-time dashboards independently.',
+  'Developed reusable React chart components with Apache ECharts, improving efficiency and standardizing visualizations.',
+   'Integrated third-party libraries to enhance dashboard interactivity, performance, and overall user experience.'
+],
     side: 'right',
   },
   {
-    date: '06.2022 – 02.2024',
-    title: 'Junior Frontend Developer',
-    company: 'Webcraft Studio',
-    companyInitials: 'WS',
+    date: '09.2021 – 11.2021',
+    title: 'UI Developer Intern',
+    company: 'Alchem Digitals',
+    companyInitials: 'AD',
     bullets: [
-      'Built and maintained responsive web interfaces using React and SCSS across multiple client projects.',
-      'Collaborated with designers to implement pixel-perfect UI components and ensure cross-browser compatibility.',
-      'Contributed to internal tooling and documentation improvements that reduced onboarding time for new developers.',
+      'interactive Built a strong foundation in frontend development by working with HTML, CSS, JavaScript, and React.js to develop interactive and responsive web interfaces.',
+      'Actively contributed to webpage development through hands-on practice projects, including blog-style applications, improving proficiency in implementing basic UI designs and component-based layouts.',
+      
     ],
     side: 'left',
   },
