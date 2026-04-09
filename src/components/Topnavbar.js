@@ -9,7 +9,7 @@ function Topnavbar() {
     const [activeTab, setActiveTab] = useState('Home')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const navItems = ['About', 'Home', 'Skills', 'Experience', 'Contact']
+    const navItems = ['About', 'Skills', 'Home', 'Experience', 'Contact']
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName)

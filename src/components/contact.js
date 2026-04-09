@@ -60,15 +60,15 @@ function Contact() {
 
         {/* Social icons */}
         <div className="flex justify-center md:items-center md:justify-start gap-5">
-          <a href="#" className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
+          <a href='https://github.com/Niranjan-webdev' target='_blank' className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
             <img src={github} alt="GitHub" className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert transition-all duration-200" />
           </a>
-          <a href="#" className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
+          <a href='https://www.linkedin.com/in/niranjan-g2k/' target='_blank' className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
             <img src={linkedIn} alt="LinkedIn" className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert transition-all duration-200" />
           </a>
-          <a href="#" className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
+          {/* <a href="#" className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-[#2dd4bf] flex items-center justify-center transition-colors duration-200 group">
             <img src={DevTo} alt="Dev.to" className="w-5 h-5 opacity-60 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert transition-all duration-200" />
-          </a>
+          </a> */}
         </div>
       </div>
 
