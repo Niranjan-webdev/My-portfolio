@@ -8,17 +8,10 @@ import FloatingTags from './floatingTags'
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
-import { RiDownload2Line, RiDownloadLine } from '@remixicon/react'
+import { RiDownloadLine } from '@remixicon/react'
 
 function MainContainer() {
     const { width, height } = useWindowSize()
-
-    let handleAbout = () => {
-        const section = document.getElementById("about")
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
     return (
         <>
             <FloatingTags />
@@ -39,9 +32,7 @@ function MainContainer() {
                         <h2 className='text-2xl md:text-4xl mb-4 font-bold'>I'm <span className='border-b-2 border-[#2eb89c]'>Niranjan Govinthan</span></h2>
                         <h1 className='text-4xl md:text-6xl mb-6 font-bold bg-gradient-to-r from-[#2eb89c] to-[#1d2734] text-transparent bg-clip-text'>FULLSTACK-SOFTWARE DEVELOPER</h1>
                         <p className='text-base md:text-xl mb-10 font-semibold'>Focused on <span className='text-[#713cdd] font-bold'>React</span>, <span className='text-[#713cdd] font-bold'>Svelte</span>, <span className='text-[#713cdd] font-bold'>JavaScript</span>, <span className='text-[#713cdd] font-bold'>TypeScript</span>, and <span className='text-[#713cdd] font-bold'>Node.js</span>. I craft fast, accessible interfaces and build scalable, maintainable frontend systems.</p>
-                        <button 
-                        onClick={handleAbout}
-                        className='py-4 px-6 bg-[#2eb89c] hover:bg-[#79cdb9] rounded-[12px] text-white text-base font-bold'>MORE ABOUT ME</button>
+                        <button className='py-4 px-6 bg-[#2eb89c] hover:bg-[#79cdb9] rounded-[12px] text-white text-base font-bold'>MORE ABOUT ME</button>
                     </div>
                     <div className='w-full md:w-[35%] flex justify-center'>
                         <Terminal />
@@ -59,8 +50,8 @@ function MainContainer() {
                     <div className='about__content w-full md:text-left text-center md:w-1/2'>
                         <h4 className='text-lg md:text-xl font-bold text-[#2eb89c] mb-6'>— ABOUT ME</h4>
                         <h2 className='text-4xl md:text-5xl text-[#2eb89c] mb-6 font-bold'><span className='text-black'>I'm</span> Niranjan</h2>
-                        <p className='text-base md:text-xl font-[600] mb-12'>I am a 4 years experienced Fullstack developer focused on React, TypeScript, and Node.js. I specialize in building robust React frontends and scalable Node.js APIs that simplify complex data operations. Outside of coding, I play electric guitar, enjoy video games, and love exploring new technologies.</p>
-                    <button className='flex gap-2 items-center py-4 px-16 bg-[#2eb89c] hover:bg-[#79cdb9] rounded-[12px] text-white text-base font-bold'>RESUME <RiDownload2Line/></button>
+                        <p className='text-base md:text-xl font-[600] mb-6'>I am a 4 years experienced Fullstack developer focused on React, TypeScript, and Node.js. I specialize in building robust React frontends and scalable Node.js APIs that simplify complex data operations. Outside of coding, I play electric guitar, enjoy video games, and love exploring new technologies.</p>
+                    <button className='py-4 px-16 bg-[#2eb89c] hover:bg-[#79cdb9] rounded-[12px] text-white text-base font-bold'>RESUME <RiDownloadLine</button>
                     </div>
                 </div>
             </section>

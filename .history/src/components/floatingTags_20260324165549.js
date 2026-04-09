@@ -28,26 +28,17 @@ function FloatingTags() {
             random: true,
             straight: false,
           },
-          opacity: { value: { min: 0.3, max: 0.6 } },  // ← much higher
-          size: { value: 10 },    
-          rotate: {
-            value: { min: 0, max: 360 },   // ← random rotation for each tag
-            direction: "random",            // ← each tag rotates in random direction
-            animation: {
-              enable: true,
-              speed: 2,                     // ← slow rotation while floating
-              sync: false,
-            },
-          },                         // ← text needs a size
+          opacity: { value: { min: 0.4, max: 0.7 } },  // ← much higher
+          size: { value: 12 },                             // ← text needs a size
           shape: {
             type: "char",
             options: {
               char: {
                 value: [
-                  "<div>", "<coffee/>", "</>", "</p>", "<span>", "</span>",
+                  "<div>", "</div>", "<p>", "</p>", "<span>", "</span>",
                   "<h1>", "</h1>", "<ul>", "<li>", "const", "=>",
-                  "useEffect", ".map()", "async", "await", "<import/>",
-                  "<Redux>", "</section>", "<dev/>", "{...}", "<TS/>",
+                  "useEffect", ".map()", "async", "await", "import",
+                  "<section>", "</section>", "<nav>", "{}", "[]",
                 ],
                 font: "monospace",
                 style: "",

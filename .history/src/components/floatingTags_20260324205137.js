@@ -29,16 +29,7 @@ function FloatingTags() {
             straight: false,
           },
           opacity: { value: { min: 0.3, max: 0.6 } },  // ← much higher
-          size: { value: 10 },    
-          rotate: {
-            value: { min: 0, max: 360 },   // ← random rotation for each tag
-            direction: "random",            // ← each tag rotates in random direction
-            animation: {
-              enable: true,
-              speed: 2,                     // ← slow rotation while floating
-              sync: false,
-            },
-          },                         // ← text needs a size
+          size: { value: 10 },                             // ← text needs a size
           shape: {
             type: "char",
             options: {
