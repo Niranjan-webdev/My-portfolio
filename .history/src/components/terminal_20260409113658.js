@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const Terminal = () => {
   const [input, setInput] = useState('');
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState([
+    { type: 'prompt', content: "Type 'help' to get started" }
+  ]);
   const [currentPath, setCurrentPath] = useState('~');
   const [commandHistory, setCommandHistory] = useState([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
@@ -35,7 +37,7 @@ const Terminal = () => {
 
   const commands = {
     help: () => [
-      'Available commands: whoami, skills, about, contact, clear, help'
+      'Available commands: whoami, skills, projects, about, contact, clear, help'
     ],
     clear: () => {
       setHistory([]);
@@ -52,11 +54,11 @@ const Terminal = () => {
       return ['Directory not found'];
     },
     pwd: () => [currentPath],
-    whoami: () => ['niranjan - Full Stack Developer'],
+    whoami: () => ['niranjan-dev'],
     date: () => [new Date().toString()],
     about: () => [
       "Hi! I'm Niranjan, a Full-stack Developer",
-      'Focused on JavaScript, Typescript, Svelte, React, and Node.js',
+      'Focused on JavaScript, Svelte, React, and Node.js',
       'I craft fast, accessible interfaces and build scalable,',
       'maintainable backend systems.',
       '',
@@ -65,24 +67,24 @@ const Terminal = () => {
     ],
     skills: () => [
       'Technical Skills:',
-      '• Frontend: Svelte, React, TypeScript, JavaScript, HTML5, CSS3, Zustand',
+      '• Frontend: Svelte, React, TypeScript, JavaScript, HTML5, CSS3',
       '• Backend: Node.js, Express',
       '• Database: MongoDB',
-      '• Tools: Git, Linux, Jira',
+      '• Tools: Git, Linux',
     ],
     contact: () => [
       'Get in touch:',
       '• Email: niranjan.g2k@gmail.com',
-      '• GitHub: https://github.com/Niranjan-webdev',
+      '• GitHub: github.com/niranjanUidev',
       '• LinkedIn: linkedin.com/in/niranjan-dev',
       '• Website: niranjan-dev.de'
     ],
-    // projects: () => [
-    //   'Projects:',
-    //   '• Portfolio — React + Tailwind',
-    //   '• Blog — Next.js + MDX',
-    //   '• API — Node.js + Express',
-    // ]
+    projects: () => [
+      'Projects:',
+      '• Portfolio — React + Tailwind',
+      '• Blog — Next.js + MDX',
+      '• API — Node.js + Express',
+    ]
   };
 
   const getCurrentDirectory = () => {
@@ -205,7 +207,7 @@ const Terminal = () => {
       {/* Terminal body */}
       <div
         ref={terminalRef}
-        className="bg-[#1d2734] font-mono text-base p-6 h-[270px] cursor-text overflow-y-auto"
+        className="bg-[#1d2734] font-mono text-base p-6 h-[340px] cursor-text overflow-y-auto"
         onClick={handleTerminalClick}
       >
         {history.map((item, index) => (
@@ -224,7 +226,7 @@ const Terminal = () => {
               </div>
             ) : (
               // Command output — plain gray
-              <div className="text-gray-100 font-[500] pl-4">
+              <div className="text-gray-300 pl-4">
                 {Array.isArray(item.content) ? (
                   item.content.map((line, lineIndex) => (
                     <div key={lineIndex}>{line || '\u00A0'}</div>
@@ -246,8 +248,7 @@ const Terminal = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Type 'help' to get started"
-            className="flex-1 bg-transparent text-[#2eb89c] font-bold outline-none font-mono caret-[#2eb89c] placeholder-gray-500 italic"
+            className="flex-1 bg-transparent text-[#2eb89c] font-bold outline-none font-mono caret-[#2eb89c]"
             autoComplete="off"
             spellCheck="false"
           />

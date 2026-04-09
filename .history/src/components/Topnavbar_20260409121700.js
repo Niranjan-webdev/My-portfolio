@@ -9,16 +9,10 @@ function Topnavbar() {
     const [activeTab, setActiveTab] = useState('Home')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const navItems = ['About', 'Home', 'Skills', 'Experience', 'Contact']
+    const navItems = ['About', 'Home', 'Skills', 'Contact', 'Portfolio']
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName)
-        setIsMenuOpen(false) 
-        const sectionId = tabName.toLowerCase()
-        const section = document.getElementById(sectionId)
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' })
-        }
         console.log('Active tab changed to:', tabName)
     }
     const handleModal = () => {

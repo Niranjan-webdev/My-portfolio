@@ -52,7 +52,7 @@ const Terminal = () => {
       return ['Directory not found'];
     },
     pwd: () => [currentPath],
-    whoami: () => ['niranjan - Full Stack Developer'],
+    whoami: () => ['niranjan-dev'],
     date: () => [new Date().toString()],
     about: () => [
       "Hi! I'm Niranjan, a Full-stack Developer",
@@ -73,7 +73,7 @@ const Terminal = () => {
     contact: () => [
       'Get in touch:',
       '• Email: niranjan.g2k@gmail.com',
-      '• GitHub: https://github.com/Niranjan-webdev',
+      '• GitHub: github.com/niranjanUidev',
       '• LinkedIn: linkedin.com/in/niranjan-dev',
       '• Website: niranjan-dev.de'
     ],
