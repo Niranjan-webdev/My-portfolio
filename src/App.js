@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import { RiHeartFill } from '@remixicon/react'
 import { Topnavbar, MainContainer } from './components';
 // import Topnavbar from './components/Topnavbar';
 

@@ -1,15 +1,15 @@
 import React from 'react'
-import { Terminal, github, linkedIn, mail, DevTo } from "./index"
+import { Terminal, github, linkedIn, mail } from "./index"
 import TimeLine from './timeLine'
 import FloatingTags from './floatingTags'
 import SkillSet from './skillSet'
 import Contact from './contact'
 import useWindowSize from '../hooks/useWindowSize'
 import ngAvatar from '../assets/avatar.svg'
-import { RiDownload2Line, RiDownloadLine } from '@remixicon/react'
+import { RiDownload2Line } from '@remixicon/react'
 
 function MainContainer() {
-    const { width, height } = useWindowSize()
+    const { width } = useWindowSize()
 
     let handleAbout = () => {
         const section = document.getElementById("about")
