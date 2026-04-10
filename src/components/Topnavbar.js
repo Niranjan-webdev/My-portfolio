@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import React from 'react'
-import logo from '../assets/logo.svg'
 import useWindowSize from '../hooks/useWindowSize'
 
 function Topnavbar() {
 
-    const { width, height } = useWindowSize()
+    const { width } = useWindowSize()
     const [activeTab, setActiveTab] = useState('Home')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -19,7 +18,6 @@ function Topnavbar() {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' })
         }
-        console.log('Active tab changed to:', tabName)
     }
     const handleModal = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -31,7 +29,7 @@ function Topnavbar() {
                     <ul className=''>
                         {navItems.map((item) => (
                             <li key={item}>
-                                <a
+                                <a  href={`#${item.toLowerCase()}`}
                                     onClick={() => handleTabClick(item)}
                                     className={`cursor-pointer transition-colors duration-200 ${activeTab === item
                                             ? 'bg-[#2eb89c] text-white font-semibold px-4 py-2 rounded'
@@ -62,7 +60,7 @@ function Topnavbar() {
                 ${isMenuOpen ? 'h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                 {navItems.map((item) => (
                             <li key={item}>
-                                <a
+                                <a  href={`#${item.toLowerCase()}`}
                                     onClick={() => handleTabClick(item)}
                                     className={"text-2xl font-bold"}>
                                     {item}
